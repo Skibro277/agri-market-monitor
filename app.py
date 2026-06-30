@@ -33,6 +33,23 @@ st.set_page_config(
 
 _GLOBAL_CSS = """
 <style>
+/* ===== FORCE LIGHT THEME ===== */
+:root { color-scheme: light !important; }
+html, body { background-color: #FFFFFF !important; color: #0F172A !important; }
+.stApp { background-color: #FFFFFF !important; }
+[data-testid="stAppViewContainer"] { background-color: #FFFFFF !important; }
+[data-testid="stHeader"] { background-color: #FFFFFF !important; }
+[data-testid="stSidebar"] { background-color: #F4F6FA !important; }
+[data-testid="stSidebar"] * { color: #0F172A !important; }
+[data-testid="stSidebar"] input,
+[data-testid="stSidebar"] select { background-color: #FFFFFF !important; color: #0F172A !important; }
+div[data-baseweb="select"] > div { background-color: #FFFFFF !important; color: #0F172A !important; }
+[data-testid="stMetricValue"] { color: #0F172A !important; }
+[data-testid="stMetricLabel"] { color: #64748B !important; }
+button[data-baseweb="tab"] { color: #0F172A !important; }
+button[data-baseweb="tab"][aria-selected="true"] { color: #0F2A47 !important; border-bottom-color: #C9A227 !important; }
+/* ===== END FORCE LIGHT THEME ===== */
+
 /* Hero header */
 .hero {
     background: linear-gradient(135deg, #0F2A47 0%, #1E3A66 100%);
