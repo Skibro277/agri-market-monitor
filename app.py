@@ -589,7 +589,7 @@ elif _days_old > 45:
     )
 
 if not gemini_key:
-    st.info("Wprowadź klucz Gemini API w panelu bocznym, aby wygenerować briefing.", icon="🔑")
+    st.info("Wprowadź klucz API wybranego providera w panelu bocznym, aby wygenerować briefing.", icon="🔑")
 else:
     if st.button("✨ Generuj / odśwież briefing AI"):
         st.session_state.ai_summary_text = None
