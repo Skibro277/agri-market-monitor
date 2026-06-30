@@ -9,4 +9,3 @@ pandas>=2.2.0
 numpy>=1.26.0
 plotly>=5.22.0
 yfinance>=0.2.40
-fpdf2>=2.8.0
